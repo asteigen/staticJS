@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <style>
+    body {
+      background-image: url('banana.jpg');
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="display-4">List of French Foods</h1>
+    <ul class="list-group" id="food-list">
+      <li class="list-group-item">Croissants</li>
+      <li class="list-group-item">Baguette</li>
+      <li class="list-group-item">Quiche Lorraine</li>
+      <li class="list-group-item">Coq au vin</li>
+      <li class="list-group-item">Crème brûlée</li>
+    </ul>
+    <button class="btn btn-primary mt-5" onclick="displayFruits()">Switch to Fruits</button>
+  </div>
+  <script>
+    function displayFruits() {
+      const foodList = document.getElementById("food-list");
+      foodList.innerHTML = "";
+      foodList.innerHTML = "<li class='list-group-item'>Apple</li><li class='list-group-item'>Banana</li><li class='list-group-item'>Orange</li><li class='list-group-item'>Grape</li><li class='list-group-item'>Peach</li>";
+    }
+  </script>
+</body>
+</html>
